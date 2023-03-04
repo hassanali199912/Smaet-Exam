@@ -1,4 +1,12 @@
-var arr =[
+var arr ;
+var html_lang = document.getElementsByTagName('html');
+var que_mark = document.getElementById('que-mark');
+var answers;
+
+if (html_lang[0].getAttribute("lang") == 'Ar') {
+answers = ["صح","خطاء"];
+que_mark.style.right ="-5%";
+arr =[
     {
     'q': "تحتوي صفحة Header. php  علي الصورة banner  التي تعرض اعلى كل صفحات الموقع و الارتباطات التشعبية بجميع صفحات الموقع",
     'ans':['true' , 'false'],
@@ -149,19 +157,160 @@ var arr =[
 
 
 ];
-
-
-
-var html_lang = document.getElementsByTagName('html');
-var que_mark = document.getElementById('que-mark');
-var answers;
-
-if (html_lang[0].getAttribute("lang") == 'Ar') {
-answers = ["صح","خطاء"];
-que_mark.style.right ="-5%";
 }else{
     answers = ["true","false"];
     que_mark.style.left = "-5%" ;
+    arr =[
+        {
+        'q': "The Header page contains.php on the image banner showing the top of all pages of the site and hyperlinks",
+        'ans':['true' , 'false'],
+        'type_of_question':'tf',
+        'coanswer': "a",
+        'url': "https://www.youtube.com/embed/ZjbN-Pdq9P0"
+    }
+    ,{
+        'q': "Something that is written in HTML coding language is called Tag.",
+        'ans':['true' , 'false'],
+        'type_of_question':'tf',
+        'coanswer': "a",
+        'url': "https://www.youtube.com/embed/JOaZjXoY0B"
+    }
+    ,{
+        'q': "Information that will be displayed on the Internet browser is written between Title.",
+        'ans':['true' , 'false'],
+        'type_of_question':'tf',
+        'coanswer': "b",
+        'url': "https://www.youtube.com/embed/6XqmOTwZC_0"
+    }
+    ,{
+        'q': "Web page address writes between Title.",
+        'ans':['true' , 'false'],
+        'type_of_question':'tf',
+        'coanswer': "a",
+        'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
+    }
+    ,{
+        'q': "In Html coding language some Tags have no shutdown or end like < BR>.",
+        'ans':['true' , 'false'],
+        'type_of_question':'tf',
+        'coanswer': "a",
+        'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
+    }
+    ,{
+        'q': "To save the Html coding language code file should be extended doc. ",
+        'ans':['true' , 'false'],
+        'type_of_question':'tf',
+        'coanswer': "b",
+        'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
+    }
+    ,{
+        'q': "One of the components of Web Expression's home screen is all of the above. ",
+        'ans':['true' , 'false'],
+        'type_of_question':'tf',
+        'coanswer': "a",
+        'url': "https://www.youtube.com/embed/ZjbN-Pdq9P0"
+    }
+    ,{
+        'q': "To leave one distance between the Html codes we use the code (&)",
+        'ans':['true' , 'false'],
+        'type_of_question':'tf',
+        'coanswer': "b",
+        'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
+    }
+    ,{
+        'q': "Variables stored in memory identifying a name and type, assigning its values and changing its value during the course of the program ",
+        'ans':['true' , 'false'],
+        'type_of_question':'tf',
+        'coanswer': "a",
+        'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+    }
+    ,{
+        'q': "The customization mark is  ( = ) ",
+        'ans':['true' , 'false'],
+        'type_of_question':'tf',
+        'coanswer': "a",
+        'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+    }
+    
+    // mul chose question
+    ,{
+        'q': "تحتوي صفحة........................ علي الصورة banner  التي تعرض اعلى كل صفحات الموقع و الارتباطات التشعبية بجميع صفحات الموقع ",
+        'ans':['صفحة الاتصال connection. Php ' , 'صفحة Header. php  ','صفحة ادخال المحتوى Add_term.php','صفحة ادخال البيانات Add_data.php'],
+        'type_of_question':'mc',
+        'coanswer': "b",
+        'url': "https://www.youtube.com/embed/ZjbN-Pdq9P0"
+    }
+    ,{
+        'q': "الامر الذي يكتب بلغة الترميز HTML  يطلق عليه .................",
+        'ans':['Code','Head','Tag','body'],
+        'type_of_question':'mc',
+        'coanswer': "c",
+        
+    'url': "https://www.youtube.com/embed/JOaZjXoY0B"     
+    }
+    ,{
+        'q': "المعلومات التي ستعرض على مستعرض الانترنت تكتب بين .........................",
+        'ans':['Body' , 'Title','Head','meta'],
+        'type_of_question':'mc',
+        'coanswer': "a",
+        
+    'url': "https://www.youtube.com/embed/6XqmOTwZC_0"        
+    }
+    ,{
+        'q': "عنوان صفحة الويب تكتب بين .............",
+        'ans':['Body' , 'Title','Head','meta'],
+        'type_of_question':'mc',
+        'coanswer': "b",
+        
+    'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
+    }
+    ,{
+        'q': "في لغة الترميز Html  بعض ال Tags ليس لها اغلاق او نهاية مثل .......",
+        'ans':['< Title >' , '< Head >',' < BR > ','<BODY>'],
+        'type_of_question':'mc',
+        'coanswer': "c",
+        
+    'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
+    }
+    ,{
+        'q': "لحفظ ملف كود لغة الترميز Html يجب ان يكون امتداده .........",
+        'ans':['.css' , '.doc','. Html','.xlxs'],
+        'type_of_question':'mc',
+        'coanswer': "c",
+        
+    'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
+    }
+    ,{
+        'q': "من مكونات الشاشة الرئيسية لبرنامج Web Expression...............",
+        'ans':['شريط القوائم  Menu bar' , 'نافذة صندوق الأدوات','جميع ما سبق','روابط التنقل links'],
+        'type_of_question':'mc',
+        'coanswer': "c",
+        'url': "https://www.youtube.com/embed/ZjbN-Pdq9P0"   
+    }
+    ,{
+        'q': "لترك مسافة واحدة بين اكواد  Html نستخدم الكود ..............",
+        'ans':['nbsp &' , '&','nbsp','//'],
+        'type_of_question':'mc',
+        'coanswer': "a",
+        'url': " https://www.youtube.com/embed/6XqmOTwZC_0"   
+    }
+    ,{
+        'q': "............. مخزن في الذاكرة يحدد له اسم ونوع ويخصص له قيمه وتتغير قيمته اثناء سير البرنامج",
+        'ans':['جملة التخصيص' , 'المتغيرات ','الثوابت','القيم'],
+        'type_of_question':'mc',
+        'coanswer': "b",
+        'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+    }
+    ,{
+        'q': "علامة التخصيص هي ......... ",
+        'ans':['+' , '=','-','*'],
+        'type_of_question':'mc',
+        'coanswer': "b",
+        'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+    }
+    
+    
+    ];
 }
 
 var question_span = document.getElementById('question');

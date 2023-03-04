@@ -169,7 +169,8 @@
 .exam-style #hero .c1 .card {
     margin: 2rem 0;
     box-shadow: 1px 1px 10px var(--gray-color);
-
+    min-height: 30rem ;
+    max-height: 50rem ;
 }
 
 .en-page #hero .question h2 {
@@ -225,9 +226,13 @@
 
 .exam-style #hero .buttems {
     margin-top: 3rem;
+   display: flex;
+
 }
 
 .exam-style #hero .buttems button {
+    align-self: flex-end;
+    height: 5rem;
     font-size: 2rem;
     padding: 1rem;
     flex: 1;
