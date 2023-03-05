@@ -169,7 +169,7 @@
 .exam-style #hero .c1 .card {
     margin: 2rem 0;
     box-shadow: 1px 1px 10px var(--gray-color);
-    min-height: 30rem ;
+    min-height: 40rem ;
     max-height: 50rem ;
 }
 

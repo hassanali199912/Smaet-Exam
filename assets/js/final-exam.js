@@ -5,9 +5,9 @@ var page_lang = document.getElementsByTagName('html')[0].getAttribute('lang');
 
 
 if (exam_data['correct_tf_question'] > exam_data['correct_mc_question']) {
-        fivoret_type = "TF Questions";
-        
+
         if (page_lang  == 'Ar') {
+            fivoret_type = "اسئلة الصح/الخطا";
             arr = [
                 {
                     'q': "في لغة PHP لطباعة أي معلومات على شاشة المستعرض نستخدم Echo  ",
@@ -152,6 +152,7 @@ if (exam_data['correct_tf_question'] > exam_data['correct_mc_question']) {
 
             ];
         } else {
+            fivoret_type = "TF Questions";
             arr = [
                 {
                     'q': "In PHP language to print any information on the browser screen we use Echo.",
@@ -299,160 +300,316 @@ if (exam_data['correct_tf_question'] > exam_data['correct_mc_question']) {
         }
 
 } else if (exam_data['correct_tf_question'] < exam_data['correct_mc_question']) {
-    fivoret_type = "MCQ Questions";
+  
+    if ( page_lang  == 'Ar') {
+        fivoret_type = "اسئلة الاختيار المتعدد";
+        arr = [
+            {
+                'q': "في لغة PHP لطباعة أي معلومات على شاشة المستعرض نستخدم .................",
+                'ans': ['output', 'Read', 'Input', 'Echo'],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': "في لغة PHP المتغير من النوع Double يمكن تخزين بيانات.........................",
+                'ans': ['عددية وتقبل الكسور العشرية', 'حرفي', 'منطقي', 'كائن'],
+                'type_of_question': 'mc',
+                'coanswer': "a",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': "............. مخزن في الذاكرة يحدد له اسم ونوع ويخصص له قيمه ثابتة لا تتغير اثناء سير البرنامج",
+                'ans': ['الجرفي', 'جملة التخصيص', 'المتغيرات ', 'الثوابت'],
+                'type_of_question': 'mc',
+                'coanswer': "c",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': "تستخدم كلمة Define لتعريف",
+                'ans': ['المتغير ', 'القيمة', 'الثابت', 'حملة التخصص'],
+                'type_of_question': 'mc',
+                'coanswer': "b",
+                'url': "https://www.youtube.com/embed/nnwg4orUr6I"
+            }
+            , {
+                'q': "يمكن عرض وترجمة الكود الخاص بلغة الترميز من خلال احد مستعرضات الانترنت مثل.........",
+                'ans': ['Microsoft Word', 'Internet Explorer', 'Note bad', 'vs code'],
+                'type_of_question': 'mc',
+                'coanswer': "b",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': "تنتهي كل جملة في لغة PHP بعلامة",
+                'ans': ['|', '.', ';', '/'],
+                'type_of_question': 'mc',
+                'coanswer': "c",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': "لكتابة كود في لغة PHP بدون ان يترجم او ينفذ يسبق بعلامة ..........",
+                'ans': ['//', '.', '*', ';'],
+                'type_of_question': 'mc',
+                'coanswer': "a",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': "معامل باقي القسمة هو ....................",
+                'ans': ['-', '+', '*', '%'],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+            , {
+                'q': "من علامات المقارنة في لغة PHP  وتعني لا تساوي ...........",
+                'ans': ['?', '=!', '<', '=='],
+                'type_of_question': 'mc',
+                'coanswer': "b",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+            , {
+                'q': "جملة .................تستخدم كأحد العبارات الشرطية في لغة PHP",
+                'ans': ['for', 'Print', 'Echo', 'switch'],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+    
+    
+            , {
+                'q': "القيمة ..................... يتم استخدامها في إرسال كلمات سر أو أي بيانات هامة ",
+                'ans': ['Post', 'Get', 'القيمة Post والقيمة Get', 'Request'],
+                'type_of_question': 'mc',
+                'coanswer': "a",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+            , {
+                'q': "هناك ثلاث متطلبات أساسية للاتصال بقاعدة البيانات منها ............",
+                'ans': ['Echo', 'اسم قاعدة البيانات', 'switch', 'for'],
+                'type_of_question': 'mc',
+                'coanswer': "b",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+            , {
+                'q': "طريقة Post لها حد اقصى للبيانات المستخدمة تصل الي ……. ",
+                'ans': ['15 MB', 'MB265', '7607 حرف', ' MB 8 '],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+            , {
+                'q': "ناتج العملية الحسابية الاتية 10 % 3  هو .............",
+                'ans': ['5', '1', '9', '0'],
+                'type_of_question': 'mc',
+                'coanswer': "b",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+            , {
+                'q': "نوع بيانات يستخدم لتخزين البيانات المنطقية ",
+                'ans': ['char', 'Integer', 'String', 'Boolean'],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+    
+    
+            , {
+                'q': "يستخدم ال Tag  ................ لانشاء مقطع بالصفحة ",
+                'ans': ['<div>', 'If', 'Html', '<hr>'],
+                'type_of_question': 'mc',
+                'coanswer': "a",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': "يتكون اسم المتغير من ..............",
+                'ans': ['جميع الإجابات صحيحة ', 'احرف ', 'علامة "_ "', 'ارقام'],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': "https://www.youtube.com/embed/6XqmOTwZC_0 "
+            }
+            , {
+                'q': "يمكن كتابة كود Html  باستخدام احد برامج معالجة النصوص مثل.............",
+                'ans': ['MS Word', 'جميع الإجابات صحيحة ', 'WordPad', 'vs code'],
+                'type_of_question': 'mc',
+                'coanswer': "b",
+                'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
+            }
+            , {
+                'q': "الأوامر Tags  في لغة الترميز HTML توضح بين .............",
+                'ans': [', ,', '"  " ', '<  >', '/ /'],
+                'type_of_question': 'mc',
+                'coanswer': "c",
+                'url': "https://www.youtube.com/embed/6XqmOTwZC_0 "
+            }
+            , {
+                'q': "لعمل محاذاة للمين  للنص في لغة HTML نستخدم الكود ...............",
+                'ans': ['< p align = "right" >', '< p align = "Center" >', '< p align = "Left" >', '<p align="end">'],
+                'type_of_question': 'mc',
+                'coanswer': "a",
+                'url': "https://www.youtube.com/embed/6XqmOTwZC_0"
+            }
+    
+    
+        ];
+    }else{
+        fivoret_type = "MCQ Questions";
+        arr = [
+            {
+                'q': "In PHP language to print any information on the browser screen we .................",
+                'ans': ['output', 'Read', 'Input', 'Echo'],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': "In double type variable PHP language can be store  ........................",
+                'ans': ['Numerical and Acceptable Decimal Fractures', 'literally', 'logical', 'object'],
+                'type_of_question': 'mc',
+                'coanswer': "a",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': ".............  are stored in memory for which a name and type are identified and allocated with constant values that do not change during the course of the program ",
+                'ans': ['variables', 'string', 'Constants ', 'the allocation'],
+                'type_of_question': 'mc',
+                'coanswer': "c",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': "Define is used to define the......",
+                'ans': ['value ', 'constants', 'variables', 'string'],
+                'type_of_question': 'mc',
+                'coanswer': "b",
+                'url': "https://www.youtube.com/embed/nnwg4orUr6I"
+            }
+            , {
+                'q': "Code in coding language can be viewed and translated through an Internet browser such as ........",
+                'ans': ['Microsoft Word', 'Internet Explorer', 'Note bad', 'vs code'],
+                'type_of_question': 'mc',
+                'coanswer': "b",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
 
-    arr = [
-        {
-            'q': "في لغة PHP لطباعة أي معلومات على شاشة المستعرض نستخدم .................",
-            'ans': ['output', 'Read', 'Input', 'Echo'],
-            'type_of_question': 'mc',
-            'coanswer': "d",
-            'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
-        }
-        , {
-            'q': "في لغة PHP المتغير من النوع Double يمكن تخزين بيانات.........................",
-            'ans': ['عددية وتقبل الكسور العشرية', 'حرفي', 'منطقي', 'كائن'],
-            'type_of_question': 'mc',
-            'coanswer': "a",
-            'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
-        }
-        , {
-            'q': "............. مخزن في الذاكرة يحدد له اسم ونوع ويخصص له قيمه ثابتة لا تتغير اثناء سير البرنامج",
-            'ans': ['الجرفي', 'جملة التخصيص', 'المتغيرات ', 'الثوابت'],
-            'type_of_question': 'mc',
-            'coanswer': "c",
-            'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
-        }
-        , {
-            'q': "تستخدم كلمة Define لتعريف",
-            'ans': ['المتغير ', 'القيمة', 'الثابت', 'حملة التخصص'],
-            'type_of_question': 'mc',
-            'coanswer': "b",
-            'url': "https://www.youtube.com/embed/nnwg4orUr6I"
-        }
-        , {
-            'q': "يمكن عرض وترجمة الكود الخاص بلغة الترميز من خلال احد مستعرضات الانترنت مثل.........",
-            'ans': ['Microsoft Word', 'Internet Explorer', 'Note bad', 'vs code'],
-            'type_of_question': 'mc',
-            'coanswer': "b",
-            'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
-        }
-        , {
-            'q': "تنتهي كل جملة في لغة PHP بعلامة",
-            'ans': ['|', '.', ';', '/'],
-            'type_of_question': 'mc',
-            'coanswer': "c",
-            'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
-        }
-        , {
-            'q': "لكتابة كود في لغة PHP بدون ان يترجم او ينفذ يسبق بعلامة ..........",
-            'ans': ['//', '.', '*', ';'],
-            'type_of_question': 'mc',
-            'coanswer': "a",
-            'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
-        }
-        , {
-            'q': "معامل باقي القسمة هو ....................",
-            'ans': ['-', '+', '*', '%'],
-            'type_of_question': 'mc',
-            'coanswer': "d",
-            'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
-        }
-        , {
-            'q': "من علامات المقارنة في لغة PHP  وتعني لا تساوي ...........",
-            'ans': ['?', '=!', '<', '=='],
-            'type_of_question': 'mc',
-            'coanswer': "b",
-            'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
-        }
-        , {
-            'q': "جملة .................تستخدم كأحد العبارات الشرطية في لغة PHP",
-            'ans': ['for', 'Print', 'Echo', 'switch'],
-            'type_of_question': 'mc',
-            'coanswer': "d",
-            'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
-        }
 
+            , {
+                'q': "Each PHP sentence ends with the sign ",
+                'ans': ['|', '.', ';', '/'],
+                'type_of_question': 'mc',
+                'coanswer': "c",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': "To write a code in the PHP language without translating or executing before the ..........",
+                'ans': ['//', '.', '*', ';'],
+                'type_of_question': 'mc',
+                'coanswer': "a",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': "The rest of the division coefficient is ....................",
+                'ans': ['-', '+', '*', '%'],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+            , {
+                'q': "A comparison mark in PHP means not equal is...........",
+                'ans': ['?', '!=', '<', '=='],
+                'type_of_question': 'mc',
+                'coanswer': "b",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+            , {
+                'q': "The .............. sentence is used as one of the conditional phrases in PHP language",
+                'ans': ['for', 'Print', 'Echo', 'switch'],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+    
 
-        , {
-            'q': "القيمة ..................... يتم استخدامها في إرسال كلمات سر أو أي بيانات هامة ",
-            'ans': ['Post', 'Get', 'القيمة Post والقيمة Get', 'Request'],
-            'type_of_question': 'mc',
-            'coanswer': "a",
-            'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
-        }
-        , {
-            'q': "هناك ثلاث متطلبات أساسية للاتصال بقاعدة البيانات منها ............",
-            'ans': ['Echo', 'اسم قاعدة البيانات', 'switch', 'for'],
-            'type_of_question': 'mc',
-            'coanswer': "b",
-            'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
-        }
-        , {
-            'q': "طريقة Post لها حد اقصى للبيانات المستخدمة تصل الي ……. ",
-            'ans': ['15 MB', 'MB265', '7607 حرف', ' MB 8 '],
-            'type_of_question': 'mc',
-            'coanswer': "d",
-            'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
-        }
-        , {
-            'q': "ناتج العملية الحسابية الاتية 10 % 3  هو .............",
-            'ans': ['5', '1', '9', '0'],
-            'type_of_question': 'mc',
-            'coanswer': "b",
-            'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
-        }
-        , {
-            'q': "نوع بيانات يستخدم لتخزين البيانات المنطقية ",
-            'ans': ['char', 'Integer', 'String', 'Boolean'],
-            'type_of_question': 'mc',
-            'coanswer': "d",
-            'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
-        }
+            , {
+                'q': "Value .......... is used to send passwords or any important data ",
+                'ans': ['Post', 'Get', ' Post & Get', 'Request'],
+                'type_of_question': 'mc',
+                'coanswer': "a",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+            , {
+                'q': "There are three basic requirements to connect to the database, including the ............",
+                'ans': ['Echo', 'the name of the database', 'switch', 'for'],
+                'type_of_question': 'mc',
+                'coanswer': "b",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+            , {
+                'q': "Post method has maximum data usage up to ……. ",
+                'ans': ['15 MB', '265 MB', '7607 letter', ' MB 8 '],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+            , {
+                'q': "The result of the calculation of 10% 3 is .............",
+                'ans': ['5', '1', '9', '0'],
+                'type_of_question': 'mc',
+                'coanswer': "b",
+                'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
+            }
+            , {
+                'q': "Data type used to store logical data .....",
+                'ans': ['char', 'Integer', 'String', 'Boolean'],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+    
 
-
-        , {
-            'q': "يستخدم ال Tag  ................ لانشاء مقطع بالصفحة ",
-            'ans': ['<div>', 'If', 'Html', '<hr>'],
-            'type_of_question': 'mc',
-            'coanswer': "a",
-            'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
-        }
-        , {
-            'q': "يتكون اسم المتغير من ..............",
-            'ans': ['جميع الإجابات صحيحة ', 'احرف ', 'علامة "_ "', 'ارقام'],
-            'type_of_question': 'mc',
-            'coanswer': "d",
-            'url': "https://www.youtube.com/embed/6XqmOTwZC_0 "
-        }
-        , {
-            'q': "يمكن كتابة كود Html  باستخدام احد برامج معالجة النصوص مثل.............",
-            'ans': ['MS Word', 'جميع الإجابات صحيحة ', 'WordPad', 'vs code'],
-            'type_of_question': 'mc',
-            'coanswer': "b",
-            'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
-        }
-        , {
-            'q': "الأوامر Tags  في لغة الترميز HTML توضح بين .............",
-            'ans': [', ,', '"  " ', '<  >', '/ /'],
-            'type_of_question': 'mc',
-            'coanswer': "c",
-            'url': "https://www.youtube.com/embed/6XqmOTwZC_0 "
-        }
-        , {
-            'q': "لعمل محاذاة للمين  للنص في لغة HTML نستخدم الكود ...............",
-            'ans': ['< p align = "right" >', '< p align = "Center" >', '< p align = "Left" >', '<p align="end">'],
-            'type_of_question': 'mc',
-            'coanswer': "a",
-            'url': "https://www.youtube.com/embed/6XqmOTwZC_0"
-        }
-
-
-    ];
+            , {
+                'q': "The Tag ........ uses to create a segment on the page ",
+                'ans': ['< div >', 'If', 'Html', '< hr >'],
+                'type_of_question': 'mc',
+                'coanswer': "a",
+                'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
+            }
+            , {
+                'q': "The name of the variable consists of ..............",
+                'ans': ['letters ', 'numbers ', 'sign"_" ', 'all of the above'],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': "https://www.youtube.com/embed/6XqmOTwZC_0 "
+            }
+            , {
+                'q': "Html code can be written using one of the text processing software such as ............",
+                'ans': ['MS Word', 'WordPad', 'vs code', 'all of the above'],
+                'type_of_question': 'mc',
+                'coanswer': "d",
+                'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
+            }
+            , {
+                'q': "Commands Tags in HTML coding language clarify between .............",
+                'ans': [', ,', '"  " ', '<  >', '/ /'],
+                'type_of_question': 'mc',
+                'coanswer': "c",
+                'url': "https://www.youtube.com/embed/6XqmOTwZC_0 "
+            }
+            , {
+                'q': "To make a lean alignment of the text in the HTML language we use the code ...............",
+                'ans': ['< p align = "right" >', '< p align = "Center" >', '< p align = "Left" >', '< p align="end" >'],
+                'type_of_question': 'mc',
+                'coanswer': "a",
+                'url': "https://www.youtube.com/embed/6XqmOTwZC_0"
+            }
+    
+    
+        ];
+    }
+    
 } else {
 
-        fivoret_type = "TF and MCQ Questionss";
+      
         if ( page_lang  == 'Ar') {
+            fivoret_type = "الصح/الخطا والاختياري المتعدد";
             arr = [
                 {
                     'q': "في لغة PHP لطباعة أي معلومات على شاشة المستعرض نستخدم Echo  ",
@@ -600,6 +757,7 @@ if (exam_data['correct_tf_question'] > exam_data['correct_mc_question']) {
 
             ];
         } else {
+            fivoret_type = "TF and MCQ Questions";
             arr = [
                 {
                     'q': "In PHP language to print any information on the browser screen we use Echo.",
@@ -670,80 +828,80 @@ if (exam_data['correct_tf_question'] > exam_data['correct_mc_question']) {
                     'type_of_question': 'tf',
                     'coanswer': "b",
                     'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
-                }
-                ,
+                },
                 // mcq
-
                 {
-                    'q': "في لغة PHP لطباعة أي معلومات على شاشة المستعرض نستخدم .................",
+                    'q': "In PHP language to print any information on the browser screen we .................",
                     'ans': ['output', 'Read', 'Input', 'Echo'],
                     'type_of_question': 'mc',
                     'coanswer': "d",
                     'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
                 }
                 , {
-                    'q': "في لغة PHP المتغير من النوع Double يمكن تخزين بيانات.........................",
-                    'ans': ['عددية وتقبل الكسور العشرية', 'حرفي', 'منطقي', 'كائن'],
+                    'q': "In double type variable PHP language can be store  ........................",
+                    'ans': ['Numerical and Acceptable Decimal Fractures', 'literally', 'logical', 'object'],
                     'type_of_question': 'mc',
                     'coanswer': "a",
                     'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
                 }
                 , {
-                    'q': "............. مخزن في الذاكرة يحدد له اسم ونوع ويخصص له قيمه ثابتة لا تتغير اثناء سير البرنامج",
-                    'ans': ['الجرفي', 'جملة التخصيص', 'المتغيرات ', 'الثوابت'],
+                    'q': ".............  are stored in memory for which a name and type are identified and allocated with constant values that do not change during the course of the program ",
+                    'ans': ['variables', 'string', 'Constants ', 'the allocation'],
                     'type_of_question': 'mc',
                     'coanswer': "c",
                     'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
                 }
                 , {
-                    'q': "تستخدم كلمة Define لتعريف",
-                    'ans': ['المتغير ', 'القيمة', 'الثابت', 'حملة التخصص'],
+                    'q': "Define is used to define the......",
+                    'ans': ['value ', 'constants', 'variables', 'string'],
                     'type_of_question': 'mc',
                     'coanswer': "b",
                     'url': "https://www.youtube.com/embed/nnwg4orUr6I"
                 }
                 , {
-                    'q': "يمكن عرض وترجمة الكود الخاص بلغة الترميز من خلال احد مستعرضات الانترنت مثل.........",
+                    'q': "Code in coding language can be viewed and translated through an Internet browser such as ........",
                     'ans': ['Microsoft Word', 'Internet Explorer', 'Note bad', 'vs code'],
                     'type_of_question': 'mc',
                     'coanswer': "b",
                     'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
                 }
                 , {
-                    'q': "تنتهي كل جملة في لغة PHP بعلامة",
+                    'q': "Each PHP sentence ends with the sign ",
                     'ans': ['|', '.', ';', '/'],
                     'type_of_question': 'mc',
                     'coanswer': "c",
                     'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
                 }
                 , {
-                    'q': "لكتابة كود في لغة PHP بدون ان يترجم او ينفذ يسبق بعلامة ..........",
+                    'q': "To write a code in the PHP language without translating or executing before the ..........",
                     'ans': ['//', '.', '*', ';'],
                     'type_of_question': 'mc',
                     'coanswer': "a",
                     'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
                 }
                 , {
-                    'q': "معامل باقي القسمة هو ....................",
+                    'q': "The rest of the division coefficient is ....................",
                     'ans': ['-', '+', '*', '%'],
                     'type_of_question': 'mc',
                     'coanswer': "d",
                     'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
                 }
                 , {
-                    'q': "من علامات المقارنة في لغة PHP  وتعني لا تساوي ...........",
-                    'ans': ['?', '=!', '<', '=='],
+                    'q': "A comparison mark in PHP means not equal is...........",
+                    'ans': ['?', '!=', '<', '=='],
                     'type_of_question': 'mc',
                     'coanswer': "b",
                     'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
                 }
                 , {
-                    'q': "جملة .................تستخدم كأحد العبارات الشرطية في لغة PHP",
+                    'q': "The .............. sentence is used as one of the conditional phrases in PHP language",
                     'ans': ['for', 'Print', 'Echo', 'switch'],
                     'type_of_question': 'mc',
                     'coanswer': "d",
                     'url': "https://www.youtube.com/embed/M1xBBTe1XcQ"
                 }
+        
+    
 
 
             ];

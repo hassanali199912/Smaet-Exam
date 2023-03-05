@@ -234,14 +234,14 @@ arr =[
     
     // mul chose question
     ,{
-        'q': "تحتوي صفحة........................ علي الصورة banner  التي تعرض اعلى كل صفحات الموقع و الارتباطات التشعبية بجميع صفحات الموقع ",
-        'ans':['صفحة الاتصال connection. Php ' , 'صفحة Header. php  ','صفحة ادخال المحتوى Add_term.php','صفحة ادخال البيانات Add_data.php'],
+        'q': "........ page contains.php on the image banner showing the top of all pages of the site and hyperlinks                ",
+        'ans':['connection. Php ' , 'Header. php  ','Add_term.php','Add_data.php'],
         'type_of_question':'mc',
         'coanswer': "b",
         'url': "https://www.youtube.com/embed/ZjbN-Pdq9P0"
     }
     ,{
-        'q': "الامر الذي يكتب بلغة الترميز HTML  يطلق عليه .................",
+        'q': "Something that is written in HTML coding language is called .................",
         'ans':['Code','Head','Tag','body'],
         'type_of_question':'mc',
         'coanswer': "c",
@@ -249,7 +249,7 @@ arr =[
     'url': "https://www.youtube.com/embed/JOaZjXoY0B"     
     }
     ,{
-        'q': "المعلومات التي ستعرض على مستعرض الانترنت تكتب بين .........................",
+        'q': "Information that will be displayed on the Internet browser is written between .........................",
         'ans':['Body' , 'Title','Head','meta'],
         'type_of_question':'mc',
         'coanswer': "a",
@@ -257,7 +257,7 @@ arr =[
     'url': "https://www.youtube.com/embed/6XqmOTwZC_0"        
     }
     ,{
-        'q': "عنوان صفحة الويب تكتب بين .............",
+        'q': "Web page address writes between .............",
         'ans':['Body' , 'Title','Head','meta'],
         'type_of_question':'mc',
         'coanswer': "b",
@@ -265,15 +265,15 @@ arr =[
     'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
     }
     ,{
-        'q': "في لغة الترميز Html  بعض ال Tags ليس لها اغلاق او نهاية مثل .......",
-        'ans':['< Title >' , '< Head >',' < BR > ','<BODY>'],
+        'q': "In Html coding language some Tags have no shutdown or end like.......",
+        'ans':['< Title >' , '< Head >',' < BR > ','< BODY >'],
         'type_of_question':'mc',
         'coanswer': "c",
         
     'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
     }
     ,{
-        'q': "لحفظ ملف كود لغة الترميز Html يجب ان يكون امتداده .........",
+        'q': "To save the Html coding language code file should be extended .........",
         'ans':['.css' , '.doc','. Html','.xlxs'],
         'type_of_question':'mc',
         'coanswer': "c",
@@ -281,28 +281,28 @@ arr =[
     'url': " https://www.youtube.com/embed/6XqmOTwZC_0"
     }
     ,{
-        'q': "من مكونات الشاشة الرئيسية لبرنامج Web Expression...............",
-        'ans':['شريط القوائم  Menu bar' , 'نافذة صندوق الأدوات','جميع ما سبق','روابط التنقل links'],
+        'q': "One of the components of Web Expression's home screen is...............",
+        'ans':['Menu bar' , 'toolbox','all the above','links'],
         'type_of_question':'mc',
         'coanswer': "c",
         'url': "https://www.youtube.com/embed/ZjbN-Pdq9P0"   
     }
     ,{
-        'q': "لترك مسافة واحدة بين اكواد  Html نستخدم الكود ..............",
+        'q': "To leave one distance between the Html codes we use the code ..............",
         'ans':['nbsp &' , '&','nbsp','//'],
         'type_of_question':'mc',
         'coanswer': "a",
         'url': " https://www.youtube.com/embed/6XqmOTwZC_0"   
     }
     ,{
-        'q': "............. مخزن في الذاكرة يحدد له اسم ونوع ويخصص له قيمه وتتغير قيمته اثناء سير البرنامج",
-        'ans':['جملة التخصيص' , 'المتغيرات ','الثوابت','القيم'],
+        'q': "............. stored in memory identifying a name and type, assigning its values and changing its value during the course of the program ",
+        'ans':['variables' , 'constants','the allocation','String'],
         'type_of_question':'mc',
-        'coanswer': "b",
+        'coanswer': "a",
         'url': "https://www.youtube.com/embed/GnEjTvD-x-Y"
     }
     ,{
-        'q': "علامة التخصيص هي ......... ",
+        'q': "The customization mark is  ......... ",
         'ans':['+' , '=','-','*'],
         'type_of_question':'mc',
         'coanswer': "b",
