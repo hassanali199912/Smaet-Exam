@@ -68,7 +68,7 @@ function load_questions() {
         card_string = "";
         inputs_array = "";
         lable_array = "";
-        card_string += `<div class="card my-2" id="q-card-${index}"><div class="col question my-3"><h2>${element["q"]}</h2></div><div class="col answers" id="answer_div">`;
+        card_string += `<div class="card my-2" id="q-card-${index}"><div class="col question my-3"><h2 class='p-3'>${element["q"]}</h2></div><div class="col answers" id="answer_div">`;
         element["ans"].forEach((inside_element, inside_index) => {
             if (element["ans"].length == 4) {
                 if (String.fromCharCode(97 + inside_index) == user_answer_array[index]) {
